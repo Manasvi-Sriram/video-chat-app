@@ -69,13 +69,13 @@ $(function () {
         if(enabled){
             mystream.getAudioTracks()[0].enabled=false
             html=`<i class="fas fa-microphone-slash"></i>`
-            $ ("#mute_button".toggleClass("background_red"))
+            $ ("#mute_button").toggleClass("background_red")
             $("#mute_button").html(html)
         }
         else{
             mystream.getAudioTracks()[0].enabled=true
             html=`<i class="fas fa-microphone"></i>`
-            $ ("#mute_button".toggleClass("background_red"))
+            $ ("#mute_button").toggleClass("background_red")
             $("#mute_button").html(html)
         }
 
@@ -85,13 +85,13 @@ $(function () {
         if(enabled){
             mystream.getVideoTracks()[0].enabled=false
             html=`<i class="fas fa-video-slash"></i>`
-            $ ("#stop_video".toggleClass("background_red"))
+            $ ("#stop_video").toggleClass("background_red")
             $("#stop_video").html(html)
         }
         else{
             mystream.getVideoTracks()[0].enabled=true
             html=`<i class="fas fa-video"></i>`
-            $ ("#stop_video".toggleClass("background_red"))
+            $ ("#stop_video").toggleClass("background_red")
             $("#stop_video").html(html)
         }  
     })
